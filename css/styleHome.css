@@ -25,6 +25,12 @@ body {
     transition: 0.2s;
 }
 
+.card:hover {
+    border: 1px solid #a5da81;
+}
+
+
+
 @media screen and (min-width: 994px){
 .form-control {
     width: 300px;
