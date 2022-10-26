@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/css/styleProduk.css">
     <link rel="stylesheet" type="text/css" href="/frontaws/css/all.min.css">
     <script src="https://kit.fontawesome.com/1826708ff8.js" crossorigin="anonymous"></script>
+    <script src="/Prognet-x00/custom-js/singleProduk.js"></script>
     <title>Green Market</title>
 </head>
 
@@ -100,10 +101,11 @@
                     <div class="text-muted mb-3">Rp 40.000 </div>
                 </h3>
 
-                <button type="button" class="btn btn-dark"><i class="fas fa-minus"> </i></button>
-                <span class="mx-2">1</span>
-                <button type="button" class="btn btn-warning"><i class="fas fa-plus text-white"> </i></button>
-                <span class="mx-2">Tersisa 11</span>
+                <button type="button" class="btn btn-dark"><i class="fas fa-minus" onclick="removeItem();"> </i></button>
+                <span class="mx-2" id="jumlahDitambah">0</span>
+                <button type="button" class="btn btn-warning"><i class="fas fa-plus text-white" onclick="addItem();"> </i></button>
+                <span class="ms-2">tersisa</span>
+                <span id="stockBarang">11</span>
 
                 <div class="btn-produk mt-5">
                     <a href="#" class="btn btn-dark text-white btn-lg me-2 btn-cos"> Masuk Keranjang
