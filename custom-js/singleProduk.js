@@ -1,5 +1,17 @@
 var jumlahBarang = 0;
 
+function loadClickedItem(){
+    var loadProduct = sessionStorage.getItem('product');
+    var loadPrice = sessionStorage.getItem('price');
+    var loadImage = sessionStorage.getItem('imgsrc');
+
+    // document.getElementById('idSglImage').src = loadImage;
+    document.getElementById('idSglProduct').innerHTML = loadProduct;
+    document.getElementById('idSglPrice').innerHTML = loadPrice;
+
+    // sessionStorage.clear();
+};
+
 function addItem(){
 
     var stock = document.getElementById("stockBarang").textContent;

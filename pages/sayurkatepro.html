@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styleHome.css">
     <link rel="stylesheet" type="text/css" href="../frontaws/css/all.min.css">
     <script src="https://kit.fontawesome.com/1826708ff8.js" crossorigin="anonymous"></script>
+    <script src="/custom-js/produkSayur.js"></script>
     <title>Green Market</title>
 </head>
 
@@ -101,7 +102,7 @@
                 <div class="card text-center">
                     <img src="../assets/produk/sayur/sayur1.jpg" class="card-prod card-img-top" alt="...">
                     <div class="card-body">
-                        <h6 class="card-title">Brokoli[1KG]</h6>
+                        <h6 class="card-title" id="idProductSayur1">Brokoli[1KG]</h6>
                         <div class="iconP" style="color:#fafa02;">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -109,8 +110,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <p class="card-text mt-2">Rp.40000</p>
-                        <a href="singleProduk.html" class="btn btn-success d-grid">Beli</a>
+                        <p class="card-text mt-2" id="idHargaSayur1">Rp.40000</p>
+                        <a href="singleProduk.html" class="btn btn-success d-grid" id="idButtonSayur1" onclick="updateItemSayur(this.id, 'idProductSayur1', 'idHargaSayur1')">Beli</a>
                     </div>
                 </div>
 
@@ -120,7 +121,7 @@
                 <div class="card text-center">
                     <img src="../assets/produk/sayur/sayur2.jpg" class="card-prod card-img-top" alt="...">
                     <div class="card-body">
-                        <h6 class="card-title">Bayam [300gr]</h6>
+                        <h6 class="card-title" id="idProductSayur2">Bayam [300gr]</h6>
                         <div class="iconP" style="color:#fafa02;">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -128,8 +129,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <p class="card-text mt-2">Rp.40000</p>
-                        <a href="singleProduk.html" class="btn btn-success d-grid">Beli</a>
+                        <p class="card-text mt-2" id="idHargaSayur2">Rp.20000</p>
+                        <a href="singleProduk.html" class="btn btn-success d-grid" id="idButtonSayur2" onclick="updateItemSayur(this.id, 'idProductSayur2', 'idHargaSayur2')">Beli</a>
                     </div>
                 </div>
 
@@ -139,7 +140,7 @@
                 <div class="card text-center">
                     <img src="../assets/produk/sayur/sayur3.jpg" class="card-prod card-img-top" alt="...">
                     <div class="card-body">
-                        <h6 class="card-title">Wortel [500Gr]</h6>
+                        <h6 class="card-title" id="idProductSayur3">Wortel [500Gr]</h6>
                         <div class="iconP" style="color:#fafa02;">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -147,8 +148,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <p class="card-text mt-2">Rp.40000</p>
-                        <a href="singleProduk.html" class="btn btn-success d-grid">Beli</a>
+                        <p class="card-text mt-2" id="idHargaSayur3">Rp.30000</p>
+                        <a href="singleProduk.html" class="btn btn-success d-grid" id="idButtonSayur3" onclick="updateItemSayur(this.id, 'idProductSayur3', 'idHargaSayur3')">Beli</a>
                     </div>
                 </div>
 
@@ -158,7 +159,7 @@
                 <div class="card text-center">
                     <img src="../assets/produk/sayur/sayur4.jpg" class="card-prod card-img-top" alt="...">
                     <div class="card-body">
-                        <h6 class="card-title">Tomat [500Gr]</h6>
+                        <h6 class="card-title" id="idProductSayur4">Tomat [500Gr]</h6>
                         <div class="iconP" style="color:#fafa02;">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -166,8 +167,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <p class="card-text mt-2">Rp.40000</p>
-                        <a href="singleProduk.html" class="btn btn-success d-grid">Beli</a>
+                        <p class="card-text mt-2" id="idHargaSayur4">Rp.35000</p>
+                        <a href="singleProduk.html" class="btn btn-success d-grid" id="idButtonSayur4" onclick="updateItemSayur(this.id, 'idProductSayur4', 'idHargaSayur4')">Beli</a>
                     </div>
                 </div>
 
@@ -177,7 +178,7 @@
                 <div class="card text-center">
                     <img src="../assets/produk/sayur/sayur5.jpg" class="card-prod card-img-top" alt="...">
                     <div class="card-body">
-                        <h6 class="card-title">Mentimuns [500Gr]</h6>
+                        <h6 class="card-title" id="idProductSayur5">Mentimuns [500Gr]</h6>
                         <div class="iconP" style="color:#fafa02;">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -185,8 +186,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <p class="card-text mt-2">Rp.40000</p>
-                        <a href="singleProduk.html" class="btn btn-success d-grid">Beli</a>
+                        <p class="card-text mt-2" id="idHargaSayur5">Rp.15000</p>
+                        <a href="singleProduk.html" class="btn btn-success d-grid" id="idButtonSayur5" onclick="updateItemSayur(this.id, 'idProductSayur5', 'idHargaSayur5')">Beli</a>
                     </div>
                 </div>
 
@@ -194,9 +195,9 @@
 
             <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2 d-flex align-items-stretch">
                 <div class="card text-center">
-                    <img src="../assets/produk/sayur/sayur6.jpg" class="card-prod card-img-top" alt="...">
+                    <img src="../assets/produk/sayur/sayur1.jpg" class="card-prod card-img-top" alt="...">
                     <div class="card-body">
-                        <h6 class="card-title">Marijuana [100Gr]</h6>
+                        <h6 class="card-title" id="idProductSayur6">Brokoli [500Gr]</h6>
                         <div class="iconP" style="color:#fafa02;">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -204,8 +205,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <p class="card-text mt-2">Rp.40000</p>
-                        <a href="singleProduk.html" class="btn btn-success d-grid">Beli</a>
+                        <p class="card-text mt-2" id="idHargaSayur6">Rp.20000</p>
+                        <a href="singleProduk.html" class="btn btn-success d-grid" id="idButtonSayur6" onclick="updateItemSayur(this.id, 'idProductSayur6', 'idHargaSayur6')">Beli</a>
                     </div>
                 </div>
 

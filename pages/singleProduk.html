@@ -13,10 +13,11 @@
     <link rel="stylesheet" type="text/css" href="/frontaws/css/all.min.css">
     <script src="https://kit.fontawesome.com/1826708ff8.js" crossorigin="anonymous"></script>
     <script src="../custom-js/singleProduk.js"></script>
+    <script src="../custom-js/produkSayur.js"></script>
     <title>Green Market</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" onload="loadClickedItem()">
     <!-- START NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
         <div class="container-sm">
@@ -60,7 +61,7 @@
         <nav aria-label="breadcrumb" style="background-color: #7cf2af ;" class="mt-2">
             <ol class="breadcrumb p-3">
                 <li class="breadcrumb-item"><a href="homePage.html" class="text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item"><a href="homePage.html" class="text-decoration-none">Kategori</a></li>
+                <li class="breadcrumb-item"><a href="sayurkatepro.html" class="text-decoration-none">Kategori</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Produk</li>
             </ol>
         </nav>
@@ -72,33 +73,33 @@
         <div class="row row-produk">
             <div class="col-lg-5">
                 <figure class="figure">
-                    <img src="/assets/produk/pr1.jpg" class="figure-img img-fluid"
+                    <img src="/assets/produk/sayur/sayur1.jpg" class="figure-img img-fluid" id="idSglimage"
                         style="border-radius: 5px; width: 400px;">
                     <figcaption class="figure-caption d-flex justify-content-evenly">
                         <a href="#">
-                            <img src="/assets/produk/pr1.jpg" class="figure-img img-fluid"
+                            <img src="/assets/produk/sayur/sayur1.jpg" class="figure-img img-fluid"
                                 style="border-radius: 5px; width: 70px; height: 70px;">
                         </a>
                         <a href="#">
-                            <img src="/assets/produk/pr1.jpg" class="figure-img img-fluid"
+                            <img src="/assets/produk/sayur/sayur1.jpg" class="figure-img img-fluid"
                                 style="border-radius: 5px; width: 70px; height: 70px;">
                         </a>
                         <a href="#">
-                            <img src="/assets/produk/pr1.jpg" class="figure-img img-fluid"
+                            <img src="/assets/produk/sayur/sayur1.jpg" class="figure-img img-fluid"
                                 style="border-radius: 5px; width: 70px; height: 70px;">
                         </a>
                         <a href="#">
-                            <img src="/assets/produk/pr1.jpg" class="figure-img img-fluid"
+                            <img src="/assets/produk/sayur/sayur1.jpg" class="figure-img img-fluid"
                                 style="border-radius: 5px; width: 70px; height: 70px;">
                         </a>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-lg-7">
-                <h4>Brokoli Hijau Segar [1KG]</h4>
+                <h4 id="idSglProduct"></h4>
                 <div class="undel-line"></div>
                 <h3>
-                    <div class="text-muted mb-3">Rp 40.000 </div>
+                    <div class="text-muted mb-3" id="idSglPrice"></div>
                 </h3>
 
                 <button type="button" class="btn btn-dark"><i class="fas fa-minus" onclick="removeItem();"> </i></button>
