@@ -19,7 +19,7 @@ function updateItem(ClickedId){                             //id dari element ya
         var imgsrc = '/assets/produk/';
     };
 
-    
+
     var product = document.getElementById(ClickedId).innerHTML; //ngambil element text dari ID element untuk nama product
     var price = document.getElementById(ClickedId).innerHTML;   //ngambil element text dari ID element untuk harga product
     sessionStorage.setItem('product', product);                 //menyimpan nama product ke storage selama tabs masih ada
@@ -29,7 +29,7 @@ function updateItem(ClickedId){                             //id dari element ya
 };
 
     // untuk ngambil text element
-
+    // kontol
     // ngambil alamat foto dari produk yang di click (gagal)
     // getStorageImg = sessionStorage.getItem('imgSayur1');
     // document.getElementById("singleProdukItem").src =   
