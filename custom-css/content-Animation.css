@@ -1,0 +1,46 @@
+
+/* Login Animation */
+.fadein-animate{
+    position: relative;
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+@keyframes fadein{
+    from {opacity: 0.0; top: 200px;}
+    to {opacity: 1; top: 0px;}
+}
+
+/* Register Animation */
+
+
+
+/* SELECTED POPUP Animation */
+.popup-none{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-on{
+    opacity: 1;
+    animation-name: popedon;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes popedon {
+    0% {opacity: 0.0; top: 200px;}
+    100% {opacity: 1; top: 0px; visibility: visible;}
+}
+
+.popup-off{
+    opacity: 0;
+    animation-name: popedoff;
+    animation-duration: 1s;
+}
+
+@keyframes popedoff {
+    0% {opacity: 1; top: 0px;}
+    100% {opacity: 0.0; top: 200px;}
+}

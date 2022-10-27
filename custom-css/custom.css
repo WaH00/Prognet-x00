@@ -1,0 +1,17 @@
+
+/*    SELECTED ITEM POPUP    */
+.content-top{
+    position: absolute;
+    z-index: 1;
+}
+
+.s-item1{
+    width: 500px;
+    height: 400px;
+}
+
+.s-item2{
+    width: 500px;
+    height: auto;
+}
+/* ========================= */

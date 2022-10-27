@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/styleHome.css">
+    <link rel="stylesheet" type="text/css" href="../frontaws/css/all.min.css">
+    <link rel="stylesheet" href="../custom-css/custom.css">
+    <link rel="stylesheet" href="../custom-css/content-Animation.css">
+    <script src="../custom-js/selectedItem.js"></script>
+    <script src="https://kit.fontawesome.com/1826708ff8.js" crossorigin="anonymous"></script>
+    <title>Green Market</title>
+</head>
+<body>
+
+    <!-- SELECTED MENU POPUP START -->
+    <div class="container d-inline fixed-top mt-5 popup-none" id="popup">
+        <div class="container d-flex justify-content-center">
+            <div class="s-item1 overflow-auto bg-light">
+                <div class="w-100">
+                    <table class="table">
+                        <thead>
+                            <div class="d-flex justify-content-center">
+                                <label for="title" class="fs-1">SELECTED ITEM</label>
+                            </div>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Produk</th>
+                                <th scope="col">jumlah</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Brokoli [500g]</td>
+                                <td>5</td>
+                                <td>20000</td>
+                                <td>100000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="s-item2 bg-light">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>TOTAL</td>
+                            <td>10000000</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>  
+        </div>
+    </div>
+
+    <!-- SELECTED MENU POPUP START -->
+
+    <button onclick="selectedPopUpOn();">ON</button>
+    <button onclick="selectedPopUpOff();">OFF</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -41,12 +41,12 @@ h6{
 @media screen and (min-width: 994px){
 .form-control {
     width: 300px;
-}    
+    }    
 }
 
 @media screen and (max-width: 994px){
     .navbar-nav {
         text-align: center;
     }    
-    }
+}
 
