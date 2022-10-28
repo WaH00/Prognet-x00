@@ -1,3 +1,5 @@
+// UNTUK PAGE KERANJANG
+
 var jumlahBarang = 0;
 
 function addItem(addId){

@@ -1,3 +1,5 @@
+// UNTUK BUTTON DI PAGE SINGLE PRODUCT
+
 var jumlahBarang = 0;
 
 function loadClickedItem(){

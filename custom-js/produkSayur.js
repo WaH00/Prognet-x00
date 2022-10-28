@@ -1,3 +1,5 @@
+//MASUKIN ITEM KE SESSION STORAGE DARI PAGE SAYUR
+
 function updateItemSayur(idButton, idProduct, idPrice){                             //id dari element yang di click
 
     if(idButton == 'idButtonSayur1'){
