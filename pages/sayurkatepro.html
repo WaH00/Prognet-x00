@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="../css/styleHome.css">
     <link rel="stylesheet" type="text/css" href="../frontaws/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../custom-css/content-Animation.css">
+    <link rel="stylesheet" type="text/css" href="../custom-css/custom.css">
+    <script src="../custom-js/selectedItem.js"></script>
     <script src="https://kit.fontawesome.com/1826708ff8.js" crossorigin="anonymous"></script>
     <script src="/custom-js/produkSayur.js"></script>
     <title>Green Market</title>
@@ -349,6 +351,57 @@
                 </div>
             </div>
         </div>
+
+    <!-- SELECTED MENU POPUP START -->
+    <div class="container d-inline fixed-top popup-none" id="popup">
+        <div class="container d-flex justify-content-center">
+            <div class="s-item1 overflow-auto bg-light rounded-3">
+                <div class="w-100">
+                    <table class="table">
+                        <thead>
+                            <div class="bg-success rounded-3">
+                                <button onclick="selectedPopUpOff();" class="btn btn-danger">X</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                
+                                <label for="title" class="fs-1">SELECTED ITEM</label>
+                            </div>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Produk</th>
+                                <th scope="col">jumlah</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Brokoli [500g]</td>
+                                <td>5</td>
+                                <td>20000</td>
+                                <td>100000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="s-item2 bg-light rounded-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>TOTAL</td>
+                            <td>10000000</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>  
+        </div>
+    </div>
+
+    <!-- SELECTED MENU POPUP START -->
 
     </footer>
     <!-- END FOOTER-->

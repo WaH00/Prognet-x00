@@ -3,7 +3,7 @@ var jumlahBarang = 0;
 function loadClickedItem(){
     var loadProduct = sessionStorage.getItem('product');
     var loadPrice = sessionStorage.getItem('price');
-    var loadImage = sessionStorage.getItem('imgsrc');
+    // var loadImage = sessionStorage.getItem('imgsrc');
 
     // document.getElementById('idSglImage').src = loadImage;
     document.getElementById('idSglProduct').innerHTML = loadProduct;
@@ -30,3 +30,10 @@ function removeItem(){
     };
     
 };
+
+function addToStorage(){
+    var nama = document.getElementById("idSglProduct").innerHTML; //ngambil element text dari ID element untuk nama product
+    var jumlah = document.getElementById("jumlahDitambah").innerHTML;   //ngambil element text dari ID element untuk harga product
+    sessionStorage.setItem('productChoosed', nama);                 //menyimpan nama product ke storage selama tabs masih ada
+    sessionStorage.setItem('manyChoosed', jumlah);                     //menyimpan nama product ke storage selama tabs masih ada
+}

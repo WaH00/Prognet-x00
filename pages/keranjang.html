@@ -81,16 +81,16 @@
                             <th scope="col">SUB-TOTAL</th>
                         </tr>
                     </thead>
-                    <tbody class="align-middle">
+                    <tbody class="align-middle" id="tableBody">
                         <tr>
                             <th scope="row"><a href=""><i class="fa-solid fa-trash text-success fs-4"></i></a></th>
                             <td><img src="../assets/produk/sayur/sayur1.jpg" class="img-cart"></td>
                             <td>Brokoli [500Gr]</td>
                             <td>Rp.40000</td>
                             <td>
-                                <button type="button" class="btn btn-dark"><i class="fas fa-minus"> </i></button>
-                                <span class="mx-2">1</span>
-                                <button type="button" class="btn btn-dark"><i class="fas fa-plus"></i></button>
+                                <button type="button" class="btn btn-dark" onclick="removeItem('item1');"><i class="fas fa-minus"> </i></button>
+                                <span class="mx-2" id="item1">1</span>
+                                <button type="button" class="btn btn-dark" onclick="addItem('item1');"><i class="fas fa-plus"></i></button>
                             </td>
                             <td>Rp.40000</td>
                         </tr>
@@ -180,7 +180,7 @@
                         <tr>
                             <td colspan="2">
                                 <div class="btn-co d-grid">
-                                    <button class="btn btn-success btn-sm mx-5">Yu Cekout</button>
+                                    <button class="btn btn-success btn-sm mx-5" onclick="addToChart();">Yu Cekout</button>
                                 </div>
                             </td>
                         </tr>

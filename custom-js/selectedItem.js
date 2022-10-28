@@ -1,7 +1,7 @@
 function selectedPopUpOn(){
     
-    if (document.getElementById('popup').className != 'container d-inline fixed-top mt-5 popup-on'){
-        document.getElementById('popup').className = 'container d-inline fixed-top mt-5 popup-on';
+    if (document.getElementById('popup').className != 'container d-inline fixed-top popup-on'){
+        document.getElementById('popup').className = 'container d-inline fixed-top popup-on';
     }
 
     var createRow = document.createElement('tr');
@@ -35,11 +35,11 @@ function selectedPopUpOn(){
 
 function selectedPopUpOff(){
     
-    if (document.getElementById('popup').className == 'container d-inline fixed-top mt-5 popup-on'){
-            document.getElementById('popup').className = 'container d-inline fixed-top mt-5 popup-off';
+    if (document.getElementById('popup').className == 'container d-inline fixed-top popup-on'){
+            document.getElementById('popup').className = 'container d-inline fixed-top popup-off';
     }
-    if (document.getElementById('popup').className == 'container d-inline fixed-top mt-5 popup-off'){
-        delay(1000).then(() => document.getElementById('popup').className = 'container d-inline fixed-top mt-5 popup-none');
+    if (document.getElementById('popup').className == 'container d-inline fixed-top popup-off'){
+        delay(1000).then(() => document.getElementById('popup').className = 'container d-inline fixed-top popup-none');
     }
 
 }
