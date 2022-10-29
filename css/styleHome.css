@@ -50,3 +50,16 @@ h6{
     }    
 }
 
+.costume-btn-container {
+    height: 70px;
+    width: 70px;
+    background-color: #a5da81;
+    position: absolute;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    right: 200px;
+    bottom: 50px;
+}
