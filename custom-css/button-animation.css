@@ -1,0 +1,36 @@
+.btn-animated{
+    display: inline-block;
+    position: relative;
+    padding: 0.375rem 0.75rem;
+    margin: 16;
+    border-radius: 0.25rem;
+    border: 1px;
+    overflow: hidden;
+    user-select: none;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn-p{
+    position: relative;
+    z-index: 1;
+}
+
+.btn-animated::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 150%;
+    background-color: #288d5d;
+    transition: 0.5s;
+    transform: translateX(-100%) rotate(45deg);
+}
+
+.btn-animated:hover::after{
+    transform: translateX(10%) rotate(45deg);
+}
