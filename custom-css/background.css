@@ -5,6 +5,20 @@
     background-position-y: -200px ;
 }
 
+.bg-image8{
+    background: url("../assets/background-image/background8.png");
+    background-size: 150%;
+    border-radius: 0.25rem;
+    background-position-y: -200px ;
+}
+
+.bg-image9{
+    background: url("../assets/background-image/background9.png");
+    background-size: 150%;
+    border-radius: 0.25rem;
+    background-position-y: -200px ;
+}
+
 .bg-image6{
     background: url("../assets/background-image/background6.png");
     background-size: 150%;
