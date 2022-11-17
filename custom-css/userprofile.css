@@ -1,0 +1,19 @@
+.userphoto{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+.scroll-address::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-address{
+    width: auto;
+    height: 125px;
+    border: none;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
